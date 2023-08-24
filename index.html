@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Lists, Tables, [&] Forms</title>
+  </head>
+  <body>
+    <style>
+      td {
+        padding-left: 30px;
+        background-color: lightskyblue;
+      }
+
+      input[type="checkbox"],
+      input[type="radio"] {
+        accent-color: magenta;
+      }
+    </style>
+    <form method="" action="">
+      <center>
+        <table
+          border="3px"
+          style="width: 600px; border-style: outset; padding: 2px"
+        >
+          <thead>
+            <th
+              colspan="2"
+              style="font-size: 32px; color: red; background-color: wheat"
+            >
+              Registration Form
+            </th>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Enter Name</td>
+              <td>
+                <input type="text" placeholder="Enter a name " required />
+              </td>
+            </tr>
+            <tr>
+              <td>Enter Password</td>
+              <td>
+                <input type="text" placeholder="Enter a password " required />
+              </td>
+            </tr>
+            <tr>
+              <td>Enter Address</td>
+              <td>
+                <textarea
+                  cols="25"
+                  rows="5"
+                  title="Enter Most Recent Address"
+                  placeholder="Enter an address "
+                ></textarea>
+              </td>
+            </tr>
+            <tr>
+              <td>Select Game</td>
+              <td>
+                <input type="checkbox" />Hockey<br />
+                <input type="checkbox" />Football<br />
+                <input type="checkbox" />Badminton<br />
+                <input type="checkbox" />Cricket<br />
+                <input type="checkbox" />Volleyball<br />
+              </td>
+            </tr>
+            <tr>
+              <td>Gender</td>
+              <td>
+                <input type="radio" name="g" value="m" />Male
+                <input type="radio" name="g" value="f" />Female
+              </td>
+            </tr>
+            <tr>
+              <td>Select Age</td>
+              <td>
+                <input type="number" min="0" placeholder="Select" />
+              </td>
+            </tr>
+            <tr>
+              <td>Select Photo</td>
+              <td>
+                <input type="file" placeholder="Choose a File" />
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2" align="center">
+                <input
+                  style="margin-right: 100px"
+                  type="button"
+                  value="Click Me!"
+                />
+                <input type="reset" value="Reset" />
+                <input
+                  style="margin-left: 100px"
+                  type="submit"
+                  value="Submit Form"
+                />
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </center>
+    </form>
+  </body>
+</html>
